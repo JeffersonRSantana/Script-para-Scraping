@@ -61,9 +61,3 @@ Para rodar este projeto, você precisará ter o [Bun](https://bun.sh/) instalado
 3.  Na página, insira uma palavra-chave de busca (ex: "smartwatch") no campo de entrada.
 4.  Clique no botão "Buscar Produtos".
 5.  Os resultados da raspagem de dados da Amazon serão exibidos na página.
-
----
-
-Com este `README.md`, qualquer pessoa que for avaliar o seu projeto terá todas as informações que precisa para entendê-lo, configurá-lo e executá-lo sem problemas.
-
-Parabéns por todo o trabalho! Você concluiu com sucesso a tarefa do projeto.
