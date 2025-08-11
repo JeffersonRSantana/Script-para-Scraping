@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Product Scraper</title>
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Scraper</h1>
+        <p>Insira uma palavra-chave para buscar produtos na Amazon.</p>
+        
+        <div class="input-group">
+            <input type="text" id="keyword-input" placeholder="Ex: smartphone, notebook, fone de ouvido" />
+            <button id="scrape-button">Buscar Produtos</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <p>Buscando produtos...</p>
+        </div>
+
+        <div id="results-container">
+            </div>
+
+        <div id="error-message" class="hidden">
+            <p>Ocorreu um erro ao buscar os produtos. Tente novamente.</p>
+        </div>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Importação de fonte do Google Fonts para um visual mais limpo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  
+  --primary-color: #ff9900; 
+  --secondary-color: #232f3e; 
+  --text-color: #333;
+  --bg-color: #f0f2f5;
+  --card-bg-color: #fff;
+  --border-color: #ddd;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+
+.container {
+  background-color: var(--card-bg-color);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+
+h1 {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#keyword-input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#scrape-button {
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scrape-button:hover {
+  background-color: #e68a00;
+}
+
+
+#loading {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+
+#error-message {
+  text-align: center;
+  color: #d9534f;
+  background-color: #f2dede;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+#results-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.product-card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; 
+  object-fit: contain; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  height: 40px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.product-card .rating {
+  font-weight: bold;
+  color: var(--primary-color);
+}
